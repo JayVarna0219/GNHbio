@@ -5,96 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>kDNA 생물 퀴즈</title>
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-  * {
-      cursor: url('https://cdn-icons-png.flaticon.com/32/32/32176.png'), auto;
-  }
+    * {
+      cursor: url('https://cdn-icons-png.flaticon.com/32/32/32176.png'), auto !important;
+    }
 
-  body {
-    
-    font-family: 'Nanum Gothic', sans-serif;
-    background-color: #f9f9fc;
-    color: #333;
-    padding: 2em;
-    max-width: 600px;
-    margin: auto;
-  }
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+      background-color: #f9f9fc;
+      color: #333;
+      padding: 2em;
+      max-width: 600px;
+      margin: auto;
+    }
 
-  h1 {
-    text-align: center;
-    color: #222;
-    font-size: 1.8em;
-    margin-bottom: 1.5em;
-  }
+    h1, h2 {
+      text-align: center;
+      color: #222;
+    }
 
-  .choices button {
-    display: block;
-    width: 100%;
-    margin: 0.6em 0;
-    padding: 0.75em;
-    font-size: 1em;
-    background-color: #eef2ff;
-    color: #1a202c;
-    border: 1px solid #c3dafe;
-    border-radius: 8px;
-    transition: 0.2s all ease-in-out;
-    font-weight: bold;
-  }
+    .choices button {
+      display: block;
+      width: 100%;
+      margin: 0.6em 0;
+      padding: 0.75em;
+      font-size: 1em;
+      background-color: #eef2ff;
+      color: #1a202c;
+      border: 1px solid #c3dafe;
+      border-radius: 8px;
+      transition: 0.2s all ease-in-out;
+      font-weight: bold;
+    }
 
-  .choices button:hover {
-    background-color: #eef2ff;
-    border-color: #667eea;
-  }
+    .choices button:hover {
+      background-color: #eef2ff;
+      border-color: #667eea;
+    }
 
-  button {
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    background-color: #4f46e5;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin-top: 1em;
-    transition: background-color 0.2s ease;
-  }
+    button {
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1em;
+      transition: background-color 0.2s ease;
+    }
 
-  button:hover {
-    background-color: #3730a3;
-  }
+    button:hover {
+      background-color: #3730a3;
+    }
 
-  .explanation {
-    margin-top: 1em;
-    font-style: italic;
-    font-size: 0.95em;
-    color: #2f855a;
-    padding: 0.5em;
-    border-left: 4px solid #2f855a;
-    background-color: #f0fff4;
-    border-radius: 5px;
-  }
-</style>
-
-
+    .explanation {
+      margin-top: 1em;
+      font-style: italic;
+      font-size: 0.95em;
+      color: #2f855a;
+      padding: 0.5em;
+      border-left: 4px solid #2f855a;
+      background-color: #f0fff4;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- 사용자 선택 화면 -->
+  <!-- 사용자 선택 -->
   <div id="start-screen">
     <h2>누구로 시작하시겠어요?</h2>
-    <button onclick="startQuiz('JW.P')">👤 JW.P</button>
-    <button onclick="startQuiz('HS.P')">👤 HS.P</button>
+    <button onclick="startQuiz('Riddle')">👤 Riddle</button>
+    <button onclick="startQuiz('Another')">👤 Another</button>
   </div>
 
   <!-- 퀴즈 화면 -->
   <div id="quiz" style="display: none;">
     <h1>kDNA 생물 랜덤 퀴즈</h1>
-    <div id="username"></div> <!-- 사용자명 표시 영역 -->
+    <div id="username" style="text-align:center; margin-bottom: 1em;"></div>
     <div id="question">문제 불러오는 중...</div>
     <div class="choices" id="choices"></div>
     <div class="explanation" id="explanation"></div>
     <button onclick="loadRandomQuestion()">다음 문제 ▶️</button>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
-
 </html>
