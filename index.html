@@ -5,11 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>kDNA 생물 퀴즈</title>
   <style>
-    body { font-family: sans-serif; padding: 2em; max-width: 600px; margin: auto; }
-    button { margin-top: 1em; padding: 0.5em 1em; font-size: 1em; }
-    .choices button { display: block; margin: 0.5em 0; width: 100%; }
-    .explanation { margin-top: 1em; font-style: italic; color: darkgreen; }
-  </style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+  body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #f9f9fc;
+    color: #333;
+    padding: 2em;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    color: #222;
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+  }
+
+  .choices button {
+    display: block;
+    width: 100%;
+    margin: 0.6em 0;
+    padding: 0.75em;
+    font-size: 1em;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .choices button:hover {
+    background-color: #eef2ff;
+    border-color: #667eea;
+  }
+
+  button {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background-color 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #3730a3;
+  }
+
+  .explanation {
+    margin-top: 1em;
+    font-style: italic;
+    font-size: 0.95em;
+    color: #2f855a;
+    padding: 0.5em;
+    border-left: 4px solid #2f855a;
+    background-color: #f0fff4;
+    border-radius: 5px;
+  }
+</style>
+
 </head>
 <body>
   <h1>kDNA 생물 랜덤 퀴즈</h1>
