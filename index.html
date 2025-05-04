@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kDNA 생물 퀴즈</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; max-width: 600px; margin: auto; }
+    button { margin-top: 1em; padding: 0.5em 1em; font-size: 1em; }
+    .choices button { display: block; margin: 0.5em 0; width: 100%; }
+    .explanation { margin-top: 1em; font-style: italic; color: darkgreen; }
+  </style>
+</head>
+<body>
+  <h1>kDNA 생물 랜덤 퀴즈</h1>
+  <div id="quiz">
+    <div id="question">문제 불러오는 중...</div>
+    <div class="choices" id="choices"></div>
+    <div class="explanation" id="explanation"></div>
+    <button onclick="loadRandomQuestion()">다음 문제 ▶️</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
