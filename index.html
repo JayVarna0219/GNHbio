@@ -7,6 +7,10 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+  * {
+    cursor: url('https://img.icons8.com/ios-filled/50/000000/mouse-cursor.png'), auto !important;
+  }
+
   body {
     font-family: 'Nanum Gothic', sans-serif;
     background-color: #f9f9fc;
@@ -14,8 +18,6 @@
     padding: 2em;
     max-width: 600px;
     margin: auto;
-    cursor: url('https://img.icons8.com/ios-filled/50/000000/mouse-cursor.png'), auto;
-
   }
 
   h1 {
@@ -26,18 +28,17 @@
   }
 
   .choices button {
-  display: block;
-  width: 100%;
-  margin: 0.6em 0;
-  padding: 0.75em;
-  font-size: 1em;
-  background-color: #eef2ff;      /* 💜 연보라색 배경 */
-  color: #1a202c;                 /* 🖋 짙은 회색 글씨 */
-  border: 1px solid #c3dafe;      /* 연한 테두리 */
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s all ease-in-out;
-  font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 0.6em 0;
+    padding: 0.75em;
+    font-size: 1em;
+    background-color: #eef2ff;
+    color: #1a202c;
+    border: 1px solid #c3dafe;
+    border-radius: 8px;
+    transition: 0.2s all ease-in-out;
+    font-weight: bold;
   }
 
   .choices button:hover {
@@ -52,7 +53,6 @@
     color: white;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     margin-top: 1em;
     transition: background-color 0.2s ease;
   }
@@ -72,6 +72,7 @@
     border-radius: 5px;
   }
 </style>
+
 
 </head>
 <body>
