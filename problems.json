@@ -1,0 +1,35 @@
+[
+  {
+    "question": "세포막 단백질의 일반적인 기능으로 옳지 않은 것은?",
+    "choices": [
+      "물질 수송에 관여한다",
+      "세포 신호전달을 매개한다",
+      "세포 간 결합을 형성한다",
+      "ATP 합성을 직접 수행한다"
+    ],
+    "answer": 3,
+    "explanation": "ATP 합성은 미토콘드리아의 ATP synthase에서 수행되며, 세포막 단백질의 일반 기능은 아니다."
+  },
+  {
+    "question": "해당과정에서 직접 생성되는 산물로 옳은 것은?",
+    "choices": [
+      "ATP",
+      "FADH₂",
+      "산소",
+      "Acetyl-CoA"
+    ],
+    "answer": 0,
+    "explanation": "해당과정에서는 ATP와 NADH가 직접 생성된다."
+  },
+  {
+    "question": "진핵세포의 전사 개시과정에 관여하는 구조로 옳은 것은?",
+    "choices": [
+      "A site",
+      "5' cap",
+      "프라이머",
+      "텔로미어"
+    ],
+    "answer": 1,
+    "explanation": "진핵세포의 mRNA는 5' cap 구조를 통해 리보솜이 인식하게 된다."
+  }
+]
