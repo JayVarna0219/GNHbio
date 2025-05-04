@@ -12,6 +12,7 @@
   }
 
   body {
+    
     font-family: 'Nanum Gothic', sans-serif;
     background-color: #f9f9fc;
     color: #333;
@@ -76,8 +77,17 @@
 
 </head>
 <body>
-  <h1>kDNA 생물 랜덤 퀴즈</h1>
-  <div id="quiz">
+  <!-- 사용자 선택 화면 -->
+  <div id="start-screen">
+    <h2>누구로 시작하시겠어요?</h2>
+    <button onclick="startQuiz('JW.P')">👤 Riddle</button>
+    <button onclick="startQuiz('HS.P')">👤 Another</button>
+  </div>
+
+  <!-- 퀴즈 화면 -->
+  <div id="quiz" style="display: none;">
+    <h1>kDNA 생물 랜덤 퀴즈</h1>
+    <div id="username"></div> <!-- 사용자명 표시 영역 -->
     <div id="question">문제 불러오는 중...</div>
     <div class="choices" id="choices"></div>
     <div class="explanation" id="explanation"></div>
@@ -86,4 +96,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
